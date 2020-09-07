@@ -1,0 +1,27 @@
+{
+  "name": "imagepedia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rauli Laine <rauli.laine@iki.fi>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development",
+    "start": "serve ./public",
+    "prepare": "yarn run build"
+  },
+  "devDependencies": {
+    "css-loader": "^4.2.2",
+    "pakertaja": "^1.2.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "serve": "^11.3.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "wikijs": "^6.0.1",
+    "yarn": "^1.22.5"
+  }
+}

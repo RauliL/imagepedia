@@ -1,0 +1,53 @@
+$breakpoint-sm: 576px
+$breakpoint-md: 768px
+$breakpoint-lg: 992px
+
+$image-margin-xs: 2em
+$image-margin-sm: 4em
+
+$image-size-xs: 100px
+$image-size-sm: 150px
+$image-size-md: 200px
+$image-size-lg: 250px
+
+*
+  box-sizing: padding-box
+  margin: 0
+  padding: 0
+
+body
+  background: #1d2025
+
+#container
+  align-items: center
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  margin-left: auto
+  margin-right: auto
+
+  a
+    display: flex
+    flex-direction: column
+    height: $image-size-xs
+    justify-content: center
+    margin: $image-margin-xs
+    width: $image-size-xs
+
+    @media (min-width: $breakpoint-sm)
+      height: $image-size-sm
+      margin: $image-margin-sm
+      width: $image-size-sm
+
+    @media (min-width: $breakpoint-md)
+      height: $image-size-md
+      width: $image-size-md
+
+    @media (min-width: $breakpoint-lg)
+      height: $image-size-lg
+      width: $image-size-lg
+
+    img
+      height: auto
+      max-width: 100%
