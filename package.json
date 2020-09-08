@@ -1,21 +1,37 @@
 {
   "name": "imagepedia",
+  "description": "Find random pages from Wikipedia by looking at images.",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Rauli Laine <rauli.laine@iki.fi>",
-  "license": "MIT",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RauliL/imagepedia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RauliL/imagepedia/issues"
+  },
+  "keywords": [
+    "wikipedia"
+  ],
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development",
     "start": "serve ./public",
+    "prebuild": "rimraf ./public/index.js",
+    "prepack": "yarn run build",
     "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "css-loader": "^4.2.2",
     "pakertaja": "^1.2.1",
+    "rimraf": "^3.0.2",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",
-    "serve": "^11.3.2",
     "style-loader": "^1.2.1",
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",

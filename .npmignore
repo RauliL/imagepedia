@@ -1,0 +1,8 @@
+/.editorconfig
+/.github
+/node_modules
+/src
+/tsconfig.json
+/webpack.config.js
+*.log
+*.tgz
